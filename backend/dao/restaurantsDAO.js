@@ -1,4 +1,5 @@
-
+import mongodb from "mongodb"
+const ObjectId = mongodb.ObjectID
 let restaurants
 
 export default class RestaurantsDAO {
@@ -55,7 +56,7 @@ export default class RestaurantsDAO {
       return { restaurantsList: [], totalNumRestaurants: 0 }
     }
   }
-  /*
+  
   static async getRestaurantByID(id) {
     try {
       const pipeline = [
@@ -110,7 +111,7 @@ export default class RestaurantsDAO {
       return cuisines
     }
   }
-  */
+  
 }
 
 
